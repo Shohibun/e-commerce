@@ -5,8 +5,15 @@ import jmb from "../../public/images/jmb.png";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function Login() {
+  const router = useRouter();
+
+  const handleRedirect = () => {
+    router.push("/layouts/home");
+  };
+
   return (
     <div className="w-full flex justify-center items-center">
       <div className="w-8/12 mb-10">
@@ -20,7 +27,7 @@ export default function Login() {
           />
         </div>
 
-        <h1 className="text-4xl text-black font-bold text-center">
+        <h1 className="text-4xl text-green-600 font-bold text-center">
           Welcome Back!
         </h1>
 
@@ -41,8 +48,8 @@ export default function Login() {
 
           <div className="w-full flex justify-center">
             <Button
-              variant={"default"}
-              className="w-2/12 mt-10 rounded-lg cursor-pointer"
+              onClick={handleRedirect}
+              className="w-3/12 bg-green-500 mt-10 rounded-lg cursor-pointer hover:bg-green-400"
             >
               Login
             </Button>
