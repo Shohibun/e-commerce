@@ -21,10 +21,13 @@ import {
 
 export function Navbar() {
   return (
-    <header className="w-full border-b shadow-sm bg-background">
+    <header className="w-full border-b shadow-sm bg-green-500">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         {/* Logo */}
-        <Link href="/" className="font-bold text-xl hover:text-green-400">
+        <Link
+          href="/"
+          className="font-bold text-xl text-white hover:text-green-400"
+        >
           <Image
             src={logo}
             width={60}
@@ -39,13 +42,13 @@ export function Navbar() {
           <div className="grid grid-cols-3 gap-3">
             <div className="col-span-1 my-auto">
               <Link href="/layouts/home">
-                <House className="cursor-pointer hover:text-green-400" />
+                <House className="cursor-pointer text-white hover:text-green-400" />
               </Link>
             </div>
 
             <div className="col-span-1 my-auto">
               <Link href="/">
-                <ShoppingCart className="cursor-pointer hover:text-green-400" />
+                <ShoppingCart className="cursor-pointer text-white hover:text-green-400" />
               </Link>
             </div>
 
