@@ -55,10 +55,10 @@ export default function HomeMain() {
         <div className="grid grid-cols-5 gap-4 mt-8">
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items1} alt="items_1" className="rounded-t-lg" />
+              <Image src={items1} alt="items_1" className="h-48 rounded-t-lg" />
 
               <CardHeader>
-                <CardTitle className="text-lg">Wireless Headphones</CardTitle>
+                <CardTitle className="text-lg">Headphones</CardTitle>
                 <CardDescription className="text-green-500">
                   $79.99
                 </CardDescription>
@@ -79,7 +79,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items2} alt="items_2" className="rounded-t-lg" />
+              <Image src={items2} alt="items_2" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Cooton T-Shirt</CardTitle>
@@ -103,7 +103,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items3} alt="items_3" className="rounded-t-lg" />
+              <Image src={items3} alt="items_3" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Stainless Cookware</CardTitle>
@@ -127,7 +127,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items4} alt="items_4" className="rounded-t-lg" />
+              <Image src={items4} alt="items_4" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Mystery Novel</CardTitle>
@@ -151,7 +151,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items5} alt="items_5" className="rounded-t-lg" />
+              <Image src={items5} alt="items_5" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Smartwatch</CardTitle>
@@ -175,7 +175,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items6} alt="items_6" className="rounded-t-lg" />
+              <Image src={items6} alt="items_6" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Denim Jeans</CardTitle>
@@ -199,7 +199,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items7} alt="items_7" className="rounded-t-lg" />
+              <Image src={items7} alt="items_7" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Blender</CardTitle>
@@ -223,7 +223,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items8} alt="items_8" className="rounded-t-lg" />
+              <Image src={items8} alt="items_8" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Fiction Book</CardTitle>
@@ -247,7 +247,7 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items9} alt="items_9" className="rounded-t-lg" />
+              <Image src={items9} alt="items_9" className="h-48 rounded-t-lg" />
 
               <CardHeader>
                 <CardTitle className="text-lg">Bluetooth Speaker</CardTitle>
@@ -271,7 +271,11 @@ export default function HomeMain() {
 
           <div className="col-span-1">
             <Card className="py-0">
-              <Image src={items10} alt="items_10" className="rounded-t-lg" />
+              <Image
+                src={items10}
+                alt="items_10"
+                className="h-48 rounded-t-lg"
+              />
 
               <CardHeader>
                 <CardTitle className="text-lg">Leather Wallet</CardTitle>
