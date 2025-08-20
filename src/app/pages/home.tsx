@@ -19,6 +19,7 @@ import items7 from "../../../public/images/items_7.jpg";
 import items8 from "../../../public/images/items_8.jpg";
 import items9 from "../../../public/images/items_9.jpg";
 import items10 from "../../../public/images/items_10.jpg";
+import Link from "next/link";
 
 export default function HomeMain() {
   return (
@@ -54,27 +55,33 @@ export default function HomeMain() {
 
         <div className="grid grid-cols-5 gap-4 mt-8">
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items1} alt="items_1" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items1}
+                  alt="items_1"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Headphones</CardTitle>
-                <CardDescription className="text-green-500">
-                  $79.99
-                </CardDescription>
-                <CardDescription>Electronics</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Headphones</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $79.99
+                  </CardDescription>
+                  <CardDescription>Electronics</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">1 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">1 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
