@@ -85,223 +85,273 @@ export default function HomeMain() {
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items2} alt="items_2" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items2}
+                  alt="items_2"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Cooton T-Shirt</CardTitle>
-                <CardDescription className="text-green-500">
-                  $19.99
-                </CardDescription>
-                <CardDescription>Clothing</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Cooton T-Shirt</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $19.99
+                  </CardDescription>
+                  <CardDescription>Clothing</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">10 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">10 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items3} alt="items_3" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items3}
+                  alt="items_3"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Stainless Cookware</CardTitle>
-                <CardDescription className="text-green-500">
-                  $39.99
-                </CardDescription>
-                <CardDescription>Home & Kitchen</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Stainless Cookware</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $39.99
+                  </CardDescription>
+                  <CardDescription>Home & Kitchen</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">5 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">5 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items4} alt="items_4" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items4}
+                  alt="items_4"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Mystery Novel</CardTitle>
-                <CardDescription className="text-green-500">
-                  $13.99
-                </CardDescription>
-                <CardDescription>Books</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <StarHalf className="text-yellow-200 inline w-5 mr-1" />
-                    4.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Mystery Novel</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $13.99
+                  </CardDescription>
+                  <CardDescription>Books</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <StarHalf className="text-yellow-200 inline w-5 mr-1" />
+                      4.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">3 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">3 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items5} alt="items_5" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items5}
+                  alt="items_5"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Smartwatch</CardTitle>
-                <CardDescription className="text-green-500">
-                  $139.99
-                </CardDescription>
-                <CardDescription>Electronics</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Smartwatch</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $139.99
+                  </CardDescription>
+                  <CardDescription>Electronics</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">52 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">52 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items6} alt="items_6" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items6}
+                  alt="items_6"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Denim Jeans</CardTitle>
-                <CardDescription className="text-green-500">
-                  $49.99
-                </CardDescription>
-                <CardDescription>Clothing</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Denim Jeans</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $49.99
+                  </CardDescription>
+                  <CardDescription>Clothing</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">50 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">50 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items7} alt="items_7" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items7}
+                  alt="items_7"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Blender</CardTitle>
-                <CardDescription className="text-green-500">
-                  $29.99
-                </CardDescription>
-                <CardDescription>Electronics</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <StarHalf className="text-yellow-200 inline w-5 mr-1" />
-                    4.2
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Blender</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $29.99
+                  </CardDescription>
+                  <CardDescription>Electronics</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <StarHalf className="text-yellow-200 inline w-5 mr-1" />
+                      4.2
+                    </p>
 
-                  <p className="text-gray-500 text-xs">20 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">20 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items8} alt="items_8" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items8}
+                  alt="items_8"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Fiction Book</CardTitle>
-                <CardDescription className="text-green-500">
-                  $9.99
-                </CardDescription>
-                <CardDescription>Books</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <StarHalf className="text-yellow-200 inline w-5 mr-1" />
-                    4.2
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Fiction Book</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $9.99
+                  </CardDescription>
+                  <CardDescription>Books</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <StarHalf className="text-yellow-200 inline w-5 mr-1" />
+                      4.2
+                    </p>
 
-                  <p className="text-gray-500 text-xs">27 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">27 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image src={items9} alt="items_9" className="h-48 rounded-t-lg" />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items9}
+                  alt="items_9"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Bluetooth Speaker</CardTitle>
-                <CardDescription className="text-green-500">
-                  $123.99
-                </CardDescription>
-                <CardDescription>Books</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Bluetooth Speaker</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $123.99
+                  </CardDescription>
+                  <CardDescription>Books</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">33 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">33 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
 
           <div className="col-span-1">
-            <Card className="py-0">
-              <Image
-                src={items10}
-                alt="items_10"
-                className="h-48 rounded-t-lg"
-              />
+            <Link href={"/layouts/product"}>
+              <Card className="py-0">
+                <Image
+                  src={items10}
+                  alt="items_10"
+                  className="h-48 rounded-t-lg"
+                />
 
-              <CardHeader>
-                <CardTitle className="text-lg">Leather Wallet</CardTitle>
-                <CardDescription className="text-green-500">
-                  $23.99
-                </CardDescription>
-                <CardDescription>Clothing</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex justify-between items-center">
-                  <p className="text-sm flex items-center">
-                    <Star className="text-yellow-200 inline w-5 mr-1" />
-                    5.0
-                  </p>
+                <CardHeader>
+                  <CardTitle className="text-lg">Leather Wallet</CardTitle>
+                  <CardDescription className="text-green-500">
+                    $23.99
+                  </CardDescription>
+                  <CardDescription>Clothing</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="flex justify-between items-center">
+                    <p className="text-sm flex items-center">
+                      <Star className="text-yellow-200 inline w-5 mr-1" />
+                      5.0
+                    </p>
 
-                  <p className="text-gray-500 text-xs">13 Terjual</p>
-                </div>
-              </CardContent>
-            </Card>
+                    <p className="text-gray-500 text-xs">13 Terjual</p>
+                  </div>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </div>
