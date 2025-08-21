@@ -23,7 +23,12 @@ export default function ProductMain() {
         <Breadcrumb>
           <BreadcrumbList>
             <BreadcrumbItem>
-              <BreadcrumbLink href="/layouts/home">Home</BreadcrumbLink>
+              <BreadcrumbLink
+                href="/layouts/home"
+                className="hover:text-green-500"
+              >
+                Home
+              </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
@@ -94,7 +99,7 @@ export default function ProductMain() {
                 <Star className="w-5 h-5 text-green-500" />
               </div>
 
-              <p className="text-base">120 Reviews</p>
+              <p className="text-sm">120 Reviews</p>
             </div>
 
             <div className="col-span-3">
@@ -104,35 +109,35 @@ export default function ProductMain() {
                 100%
               </span>
 
-              <span>
+              <span className="flex justify-between items-center">
                 4
-                <Progress value={0} />
+                <Progress value={0} className="w-11/12 text-green-500" />
                 0%
               </span>
 
-              <span>
+              <span className="flex justify-between items-center">
                 3
-                <Progress value={0} />
+                <Progress value={0} className="w-11/12 text-green-500" />
                 0%
               </span>
 
-              <span>
+              <span className="flex justify-between items-center">
                 2
-                <Progress value={0} />
+                <Progress value={0} className="w-11/12 text-green-500" />
                 0%
               </span>
 
-              <span>
+              <span className="flex justify-between items-center">
                 1
-                <Progress value={0} />
+                <Progress value={0} className="w-11/12 text-green-500" />
                 0%
               </span>
             </div>
           </div>
 
-          <div className="mt-3">
+          <div className="mt-12">
             <div className="">
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-4 w-2/12">
                 <div className="col-span-1">
                   <Avatar>
                     <AvatarImage src={user1.src} />
@@ -140,29 +145,29 @@ export default function ProductMain() {
                   </Avatar>
                 </div>
 
-                <div className="col-span-2">
+                <div className="col-span-3">
                   <p className="font-bold text-xs">Kesya Lovrenka</p>
                   <p className="text-gray-500 text-xs">2023-08-15</p>
                 </div>
               </div>
 
-              <div className="flex justify-between">
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
+              <div className="flex justify-between mt-1 w-2/12">
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
               </div>
 
-              <p className="text-xs">
+              <p className="text-xs mt-3">
                 This t-shirt is amazing! The cotton is so soft and comfortable,
                 and it fits perfectly. I have washed it several times, and it
                 still looks great. Highly recommend!
               </p>
             </div>
 
-            <div className="mt-3">
-              <div className="grid grid-cols-3 gap-4">
+            <div className="mt-8">
+              <div className="grid grid-cols-4 w-2/12">
                 <div className="col-span-1">
                   <Avatar>
                     <AvatarImage src={user2.src} />
@@ -170,29 +175,29 @@ export default function ProductMain() {
                   </Avatar>
                 </div>
 
-                <div className="col-span-2">
+                <div className="col-span-3">
                   <p className="font-bold text-xs">Olivia Bennet</p>
                   <p className="text-gray-500 text-xs">2023-05-15</p>
                 </div>
               </div>
 
-              <div className="flex justify-between">
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
+              <div className="flex justify-between mt-1 w-2/12">
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
               </div>
 
-              <p className="text-xs">
+              <p className="text-xs mt-3">
                 Great quality t-shirt for the price. The fit is true to size,
                 and the fabric is nice and soft. I have received many
                 compliments on it.
               </p>
             </div>
 
-            <div className="mt-3">
-              <div className="grid grid-cols-3 gap-4">
+            <div className="mt-8">
+              <div className="grid grid-cols-4 w-2/12">
                 <div className="col-span-1">
                   <Avatar>
                     <AvatarImage src={user3.src} />
@@ -200,21 +205,21 @@ export default function ProductMain() {
                   </Avatar>
                 </div>
 
-                <div className="col-span-2">
+                <div className="col-span-3">
                   <p className="font-bold text-xs">Kayla Smith</p>
                   <p className="text-gray-500 text-xs">2023-05-15</p>
                 </div>
               </div>
 
-              <div className="flex justify-between">
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
-                <Star className="w-5 h-5 bg-green-500" />
+              <div className="flex justify-between mt-1 w-2/12">
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
+                <Star className="w-5 h-5 text-green-500" />
               </div>
 
-              <p className="text-xs">
+              <p className="text-xs mt-3">
                 The t-shirt is okay, but the fabric is a bit thinner than I
                 expected. It is comfortable enough, but I am not sure how well
                 it will hold up over time.
