@@ -47,7 +47,7 @@ export function Navbar() {
             </div>
 
             <div className="col-span-1 my-auto">
-              <Link href="/">
+              <Link href="/layouts/transaction">
                 <ShoppingCart className="cursor-pointer text-white hover:text-green-400" />
               </Link>
             </div>
@@ -85,13 +85,16 @@ export function Navbar() {
             </SheetTrigger>
             <SheetContent side="right">
               <nav className="flex flex-col gap-4 mt-8 mx-4">
-                <Link href="/" className="hover:text-primary">
+                <Link href="/layouts/home" className="hover:text-primary">
                   Home
                 </Link>
-                <Link href="/about" className="hover:text-primary">
+                <Link
+                  href="/layouts/transaction"
+                  className="hover:text-primary"
+                >
                   Basket
                 </Link>
-                <Link href="/contact" className="hover:text-primary">
+                <Link href="/layouts/profile" className="hover:text-primary">
                   Profile
                 </Link>
               </nav>
