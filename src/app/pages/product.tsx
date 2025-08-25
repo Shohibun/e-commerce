@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -15,8 +17,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import user1 from "../../../public/images/user_1.jpeg";
 import user2 from "../../../public/images/user_2.jpeg";
 import user3 from "../../../public/images/user_3.jpeg";
+import { useRouter } from "next/navigation";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 
 export default function ProductMain() {
+  const router = useRouter();
+
+  const handleClickBuy = () => {
+    router.push("/layouts/transaction");
+  };
+
   return (
     <div className="flex justify-center items-center mb-10 mt-5">
       <div className="w-8/12">
@@ -64,12 +83,35 @@ export default function ProductMain() {
         </div>
 
         <div className="w-3/12 flex justify-start gap-4 mt-5">
-          <Button className="bg-green-500 text-white font-bold cursor-pointer hover:bg-green-400">
+          <Button
+            onClick={handleClickBuy}
+            className="bg-green-500 text-white font-bold cursor-pointer hover:bg-green-400"
+          >
             Buy Now
           </Button>
-          <Button variant={"outline"} className="font-bold cursor-pointer">
-            Add to Cart
-          </Button>
+
+          <AlertDialog>
+            <AlertDialogTrigger>
+              <Button variant={"outline"} className="font-bold cursor-pointer">
+                Add to Cart
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle className="text-green-500 font-bold">
+                  Your Item!
+                </AlertDialogTitle>
+                <AlertDialogDescription>
+                  Your item has been added to the basket.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogAction className="bg-green-500 text-white hover:bg-green-400">
+                  Continue
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
 
         <div className="mt-5">

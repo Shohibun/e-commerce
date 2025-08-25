@@ -50,6 +50,7 @@ export default function Login() {
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
+              suppressHydrationWarning // Untuk menghilangkan error ketika melakukan render
             />
           </div>
 
@@ -61,6 +62,7 @@ export default function Login() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              suppressHydrationWarning
             />
           </div>
 
@@ -70,6 +72,7 @@ export default function Login() {
 
           <div className="w-full flex justify-center">
             <Button
+              suppressHydrationWarning
               type="submit"
               className="w-3/12 bg-green-500 mt-10 rounded-lg cursor-pointer hover:bg-green-400"
             >
