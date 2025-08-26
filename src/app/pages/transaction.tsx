@@ -8,6 +8,16 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import items1 from "../../../public/images/items_1.jpg";
@@ -170,9 +180,28 @@ export default function TransactionMain() {
         </div>
 
         <div className="mt-10 flex justify-center">
-          <Button className="w-4/12 bg-green-500 mt-10 rounded-lg cursor-pointer hover:bg-green-400">
-            Confirm Order
-          </Button>
+          <AlertDialog>
+            <AlertDialogTrigger className="w-full">
+              <Button className="w-4/12 bg-green-500 mt-10 rounded-lg cursor-pointer hover:bg-green-400">
+                Confirm Order
+              </Button>
+            </AlertDialogTrigger>
+            <AlertDialogContent>
+              <AlertDialogHeader>
+                <AlertDialogTitle className="text-green-500 font-bold">
+                  Successful!
+                </AlertDialogTitle>
+                <AlertDialogDescription>
+                  This purchase was successful.
+                </AlertDialogDescription>
+              </AlertDialogHeader>
+              <AlertDialogFooter>
+                <AlertDialogAction className="bg-green-500 text-white hover:bg-green-400">
+                  Continue
+                </AlertDialogAction>
+              </AlertDialogFooter>
+            </AlertDialogContent>
+          </AlertDialog>
         </div>
       </div>
     </div>
