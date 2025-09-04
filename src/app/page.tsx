@@ -13,14 +13,27 @@ export default function Login() {
   const [password, setPassword] = useState("");
   const router = useRouter();
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    if (username === "shohibun" && password === "shohibun123") {
-      localStorage.setItem("IsLoggedIn", "true");
-      router.push("/layouts/home");
-    } else {
-      alert("Fail Login!");
+    try {
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ username, password }),
+      });
+
+      const data = await res.json();
+
+      if (res.ok) {
+        localStorage.setItem("IsLoggedIn", "true");
+        router.push("/layouts/home");
+      } else {
+        alert(data.error || "Fail Login!");
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong!");
     }
   };
 
@@ -50,7 +63,6 @@ export default function Login() {
               placeholder="Username"
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              suppressHydrationWarning // Untuk menghilangkan error ketika melakukan render
             />
           </div>
 
@@ -62,7 +74,6 @@ export default function Login() {
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              suppressHydrationWarning
             />
           </div>
 
@@ -72,7 +83,6 @@ export default function Login() {
 
           <div className="w-full flex justify-center">
             <Button
-              suppressHydrationWarning
               type="submit"
               className="w-3/12 bg-green-500 mt-10 rounded-lg cursor-pointer hover:bg-green-400"
             >
