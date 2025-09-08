@@ -19,7 +19,6 @@ import {
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog";
 import Image from "next/image";
-import { Button } from "@/components/ui/button";
 import items1 from "../../../public/images/items_1.jpg";
 import items2 from "../../../public/images/items_2.jpg";
 import items3 from "../../../public/images/items_3.jpg";
@@ -181,10 +180,8 @@ export default function TransactionMain() {
 
         <div className="mt-10 flex justify-center">
           <AlertDialog>
-            <AlertDialogTrigger className="w-full">
-              <Button className="w-4/12 bg-green-500 mt-10 rounded-lg cursor-pointer hover:bg-green-400">
-                Confirm Order
-              </Button>
+            <AlertDialogTrigger className="w-4/12 bg-green-500 text-white rounded-lg py-1.5 cursor-pointer hover:bg-green-400">
+              Confirm Order
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>

@@ -91,10 +91,8 @@ export default function ProductMain() {
           </Button>
 
           <AlertDialog>
-            <AlertDialogTrigger>
-              <Button variant={"outline"} className="font-bold cursor-pointer">
-                Add to Cart
-              </Button>
+            <AlertDialogTrigger className="border-2 rounded-lg font-bold text-black py-1.5 px-4 text-sm cursor-pointer hover:bg-gray-100">
+              Add to Cart
             </AlertDialogTrigger>
             <AlertDialogContent>
               <AlertDialogHeader>

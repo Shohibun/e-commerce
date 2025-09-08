@@ -23,7 +23,12 @@ export default function ProfileMain() {
               <Label htmlFor="username">Username:</Label>
             </div>
             <div className="col-span-10">
-              <Input type="text" value={"SongMin"} placeholder="Username" />
+              <Input
+                type="text"
+                value={"SongMin"}
+                placeholder="Username"
+                readOnly // Kalau hanya untuk display, tapi jika ingin melakukan perubahan nantinya gunakan onChange
+              />
             </div>
 
             {/* Full Name */}
@@ -35,6 +40,7 @@ export default function ProfileMain() {
                 type="text"
                 value={"Baek Song Min"}
                 placeholder="Full Name"
+                readOnly
               />
             </div>
 
@@ -47,6 +53,7 @@ export default function ProfileMain() {
                 type="email"
                 value={"baeksongmin@gmail.com"}
                 placeholder="username@gmail.com"
+                readOnly
               />
             </div>
 
@@ -59,6 +66,7 @@ export default function ProfileMain() {
                 type="text"
                 value={"0912345678"}
                 placeholder="Phone Number"
+                readOnly
               />
             </div>
 
@@ -71,6 +79,7 @@ export default function ProfileMain() {
                 type="text"
                 value={"18 January 2000"}
                 placeholder="Date of Birth"
+                readOnly
               />
             </div>
 
@@ -107,6 +116,7 @@ export default function ProfileMain() {
                 type="text"
                 value={"003/001, Dusun Ledok, Sidomukti, Mayang, Jember"}
                 placeholder="Address"
+                readOnly
               />
             </div>
 
@@ -115,7 +125,12 @@ export default function ProfileMain() {
               <Label htmlFor="postalcode">Postal Code:</Label>
             </div>
             <div className="col-span-10">
-              <Input type="text" value={"68182"} placeholder="Postal Code" />
+              <Input
+                type="text"
+                value={"68182"}
+                placeholder="Postal Code"
+                readOnly
+              />
             </div>
           </div>
         </div>
