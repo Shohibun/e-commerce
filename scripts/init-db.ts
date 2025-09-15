@@ -15,6 +15,12 @@ if (!fs.existsSync(dbDir)) {
 const db = new Database(dbPath);
 
 // Buat tabel users
+// IF NOT EXISTS → Supaya tidak error kalau tabel users sudah ada, maka tidak akan dibuat ulang
+// PRIMARY KEY → Menandakan kolom ini sebagai kunci utama tabel, artinya tidak boleh duplikat dan harus unik
+// AUTOINCREMENT berarti nilai id akan otomatis bertambah setiap kali menambah produk baru
+// NOT NULL = wajib diisi, tidak boleh kosong
+// UNIQUE → Tidak boleh ada username yang sama, sehingga tiap user punya username berbeda
+// DEFAULT CURRENT_TIMESTAMP → Secara otomatis akan menyimpan waktu sekarang saat data user ditambahkan
 db.prepare(
   `
   CREATE TABLE IF NOT EXISTS users (
