@@ -7,6 +7,7 @@ import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Link from "next/link";
 
 export default function Login() {
   const [username, setUsername] = useState("");
@@ -82,6 +83,17 @@ export default function Login() {
           <h5 className="text-xs text-gray-500 mt-2 text-center cursor-pointer hover:text-blue-500">
             Forget Your Password ?
           </h5>
+
+          <h4 className="text-sm text-green-600 font-bold text-center mt-1">
+            OR
+          </h4>
+
+          <Link
+            href={"/layouts/register"}
+            className="flex justify-center text-xs text-gray-500 mt-1 hover:text-blue-500"
+          >
+            Register
+          </Link>
 
           <div className="w-full flex justify-center">
             <Button
