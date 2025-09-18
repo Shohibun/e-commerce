@@ -308,7 +308,7 @@ export default function HomeMain() {
                   <CardDescription className="text-green-500">
                     $123.99
                   </CardDescription>
-                  <CardDescription>Books</CardDescription>
+                  <CardDescription>ELectronics</CardDescription>
                 </CardHeader>
                 <CardContent>
                   <div className="flex justify-between items-center">
