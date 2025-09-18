@@ -74,16 +74,16 @@ db.prepare(
   `
   INSERT INTO products (name, description, price, category, image_url, rating, sold)
 VALUES
-('Headphones', 'High quality headphones', 79.99, 'Electronics', '/public/images/items_1.jpg', 5.0, 1),
-('Cotton T-Shirt', 'This premium cotton t-shirt is designed for comfort and durability. Made from soft, breathable cotton, it is perfect for everyday wear. The classic fit and timeless design make it a versatile addition to any wardrobe. Available in a range of colors and sizes to suit your style.', 19.99, 'Clothing', '/public/images/items_2.jpg', 5.0, 10),
-('Stainless Cookware', 'Durable stainless steel cookware', 39.99, 'Home & Kitchen', '/public/images/items_3.jpg', 5.0, 5),
-('Mystery Novel', 'A thrilling mystery novel', 13.99, 'Books', '/public/images/items_4.jpg', 4.0, 3),
-('Smartwatch', 'Feature-rich smartwatch', 139.99, 'Electronics', '/public/images/items_5.jpg', 5.0, 52),
-('Denim Jeans', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 49.99, 'Clothing', '/public/images/items_6.jpg', 5.0, 50),
-('Blender', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 139.99, 'Electronics', '/public/images/items_7.jpg', 4.2, 20),
-('Fiction Book', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 29.99, 'Books', '/public/images/items_8.jpg', 4.2, 27),
-('Bluetooth Speaker', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 123.99, 'Electronics', '/public/images/items_9.jpg', 5.0, 33),
-('Leather Wallet', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 23.99, 'Clothing', '/public/images/items_10.jpg', 5.0, 13);
+('Headphones', 'High quality headphones', 79.99, 'Electronics', '/images/items_1.jpg', 5.0, 1),
+('Cotton T-Shirt', 'This premium cotton t-shirt is designed for comfort and durability. Made from soft, breathable cotton, it is perfect for everyday wear. The classic fit and timeless design make it a versatile addition to any wardrobe. Available in a range of colors and sizes to suit your style.', 19.99, 'Clothing', '/images/items_2.jpg', 5.0, 10),
+('Stainless Cookware', 'Durable stainless steel cookware', 39.99, 'Home & Kitchen', '/images/items_3.jpg', 5.0, 5),
+('Mystery Novel', 'A thrilling mystery novel', 13.99, 'Books', '/images/items_4.jpg', 4.0, 3),
+('Smartwatch', 'Feature-rich smartwatch', 139.99, 'Electronics', '/images/items_5.jpg', 5.0, 52),
+('Denim Jeans', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 49.99, 'Clothing', '/images/items_6.jpg', 5.0, 50),
+('Blender', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 139.99, 'Electronics', '/images/items_7.jpg', 4.2, 20),
+('Fiction Book', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 29.99, 'Books', '/images/items_8.jpg', 4.2, 27),
+('Bluetooth Speaker', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 123.99, 'Electronics', '/images/items_9.jpg', 5.0, 33),
+('Leather Wallet', 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, sequi.', 23.99, 'Clothing', '/images/items_10.jpg', 5.0, 13);
 
   `
 ).run();

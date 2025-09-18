@@ -18,10 +18,10 @@ export default function Login() {
     e.preventDefault();
 
     try {
-      const res = await fetch("/api/login", {
+      const res = await fetch("/api/users", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ username, password }),
+        body: JSON.stringify({ username, password, login: true }), // 👈 ini penting
       });
 
       const data = await res.json();
